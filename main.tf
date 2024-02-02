@@ -4,7 +4,8 @@ module "my_rg" {
 }
 
 module "my_web_app_sp" {
-  source         = "./modules/az-web-apps"
-  location       = var.resource_location
-  my_rg_id_input = module.my_rg.my_rg_id_output
+  source           = "./modules/az-web-apps"
+  location         = var.resource_location
+  my_rg_name_input = module.my_rg.my_rg_name_output
+  mytags_input     = var.mytags
 }
