@@ -4,15 +4,15 @@ resource "azurerm_mysql_server" "az_mysql_server" {
   location            = var.location
   resource_group_name = var.my_rg_name_input
 
-  administrator_login          = "mysqladmin"
-  administrator_login_password = "H@Sh1CoR3!"
+  administrator_login          = var.mysql_username_input
+  administrator_login_password = var.mysql_password_input
 
-  sku_name   = "B_Gen5_2"
-  storage_mb = 5120
-  version    = "8.0"
-  ssl_enforcement_enabled           = true
-  ssl_minimal_tls_version_enforced  = "TLS1_2"
-    tags = var.mytags_input
+  sku_name                         = "B_Gen5_2"
+  storage_mb                       = 5120
+  version                          = "8.0"
+  ssl_enforcement_enabled          = true
+  ssl_minimal_tls_version_enforced = "TLS1_2"
+  tags                             = var.mytags_input
 }
 
 ## Create MySQL Database for Web App

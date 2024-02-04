@@ -10,3 +10,16 @@ variable "mytags" {
     contact = "rajesh.nair@nordcloud.com"
   }
 }
+
+variable "mysql_username" {
+  type        = string
+  default     = "mysqladmin"
+  description = "MySQL Username"
+}
+
+variable "mysql_password" {
+  type        = string
+  default     = "H@Sh1CoR3!"
+  description = "MySQL Password"
+  sensitive = true
+}
