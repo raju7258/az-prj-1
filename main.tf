@@ -20,5 +20,4 @@ module "my_mysql_db" {
   mytags_input         = var.mytags
   mysql_username_input = var.mysql_username
   mysql_password_input = var.mysql_password
-
 }
