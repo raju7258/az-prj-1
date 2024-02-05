@@ -21,5 +21,5 @@ variable "mysql_password" {
   type        = string
   default     = "H@Sh1CoR3!"
   description = "MySQL Password"
-  sensitive = true
+  sensitive   = true
 }

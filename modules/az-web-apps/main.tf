@@ -18,22 +18,22 @@ resource "azurerm_linux_web_app" "az_web_app" {
   site_config {
     # default_documents = [ "app.py" ]
     application_stack {
-      python_version      = "3.12"
+      python_version = "3.12"
     }
   }
   connection_string {
-    name = "mysql_server_fqdn"
-    type = "MySql"
+    name  = "mysql_server_fqdn"
+    type  = "MySql"
     value = var.mysql_server_fqdn_input
   }
   connection_string {
-    name = "mysql_server_username"
-    type = "MySql"
+    name  = "mysql_server_username"
+    type  = "MySql"
     value = var.mysql_username_input
   }
   connection_string {
-    name = "mysql_server_password"
-    type = "MySql"
+    name  = "mysql_server_password"
+    type  = "MySql"
     value = var.mysql_password_input
   }
   tags = var.mytags_input
@@ -50,18 +50,18 @@ resource "azurerm_linux_web_app_slot" "az_web_app_dev_slot" {
     }
   }
   connection_string {
-    name = "mysql_server_fqdn"
-    type = "MySql"
+    name  = "mysql_server_fqdn"
+    type  = "MySql"
     value = var.mysql_server_fqdn_input
   }
   connection_string {
-    name = "mysql_server_username"
-    type = "MySql"
+    name  = "mysql_server_username"
+    type  = "MySql"
     value = var.mysql_username_input
   }
   connection_string {
-    name = "mysql_server_password"
-    type = "MySql"
+    name  = "mysql_server_password"
+    type  = "MySql"
     value = var.mysql_password_input
   }
   tags = var.mytags_input
@@ -78,18 +78,18 @@ resource "azurerm_linux_web_app_slot" "az_web_app_staging_slot" {
     }
   }
   connection_string {
-    name = "mysql_server_fqdn"
-    type = "MySql"
+    name  = "mysql_server_fqdn"
+    type  = "MySql"
     value = var.mysql_server_fqdn_input
   }
   connection_string {
-    name = "mysql_server_username"
-    type = "MySql"
+    name  = "mysql_server_username"
+    type  = "MySql"
     value = var.mysql_username_input
   }
   connection_string {
-    name = "mysql_server_password"
-    type = "MySql"
+    name  = "mysql_server_password"
+    type  = "MySql"
     value = var.mysql_password_input
   }
   tags = var.mytags_input
@@ -106,18 +106,18 @@ resource "azurerm_linux_web_app_slot" "az_web_app_prod_slot" {
     }
   }
   connection_string {
-    name = "mysql_server_fqdn"
-    type = "MySql"
+    name  = "mysql_server_fqdn"
+    type  = "MySql"
     value = var.mysql_server_fqdn_input
   }
   connection_string {
-    name = "mysql_server_username"
-    type = "MySql"
+    name  = "mysql_server_username"
+    type  = "MySql"
     value = var.mysql_username_input
   }
   connection_string {
-    name = "mysql_server_password"
-    type = "MySql"
+    name  = "mysql_server_password"
+    type  = "MySql"
     value = var.mysql_password_input
   }
 
